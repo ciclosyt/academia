@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
 
       this.mostrar = false
       
-    }, 3500);
+    }, 4500);
 
     Aos.init()
     

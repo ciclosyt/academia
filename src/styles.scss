@@ -16,16 +16,11 @@ $texto: #9b9aa4;
 html {
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
-  font-size: calc(1em + .4vw);
 }
 
 body {
   background-color: $fondo;
   color: $principal;
-}
-
-.container-fluid {
-  padding-left: 0;
 }
 
 .overlay {
@@ -39,3 +34,6 @@ body {
   justify-content: center;
 }
 
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

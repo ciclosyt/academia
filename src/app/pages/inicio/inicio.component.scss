@@ -1,7 +1,10 @@
 
-
 $fondo : #161616;
 $principal : #FFFFFF;
 $secundario : #0802B3;
 $texto : #9B9AA4;
 
+.responsive-header {
+  width: 100%;
+  overflow: visible !important;
+}

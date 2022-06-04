@@ -1,5 +1,11 @@
 <!-- spinner -->    
 <app-spinner *ngIf="mostrar"></app-spinner>
+<!-- menu -->
+<app-header *ngIf="responsive; else mobile"></app-header>
+<ng-template #mobile>
+    <app-header-responsive></app-header-responsive>
+</ng-template>
+
 <!-- ruta -->
 <router-outlet></router-outlet>
 

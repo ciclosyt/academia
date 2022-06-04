@@ -1,75 +1,20 @@
-
-
-<nav class="navbar navbar-expand-lg navbar-dark ">
-    <div class="container-fluid">
-      <a class="navbar-brand" [routerLink]="['/']"><img src="../../../../assets/logo/logo.png" width="47%" alt="logo-parrilla"></a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-2">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" [routerLink]="['/inicio']">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"(click)="redirectForm()">Contacto</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/about']">About</a>
-          </li>
-         
-        </ul>
-      </div>
+<nav class="nav-desktop">
+    <div class="container-desktop">
+      <div>
+      <ul>
+        <li><a routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+          true}" aria-current="page" [routerLink]="['/inicio']">Inicio</a></li>
+        <li><a [routerLink]="['/servicios']">Servicios</a></li>
+      </ul>
     </div>
-  </nav>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <div class="cabecera">
-   <header>
-    <nav class="menu" role="navigation">
-        
-        <div class="menu__toggle">
-            <input type="checkbox" id="checkMenu">
-            <span></span>
-            <span></span>
-            <span></span>
-
-            <ul class="navbar">
-                <li>
-                    <a [routerLink]="['/inicio']" class="link-item">Inicio</a>
-                </li>
-                <li>
-                    <a [routerLink]="['/about']" class="link-item">About</a>
-                </li>
-            </ul>
-        </div>
-
-    </nav>
-
-</header> 
-<div class="logo">
-    <p class="logo__nombre">Jose</p>
-    <p class="logo__apellido">Parrilla<span class="punto">.</span> </p>
-
-</div>
-
-</div> -->
-
-
+    <div>
+      <img src="../../../../assets/perfil/avatar.png" alt="imagen Jose Parrilla">
+    </div>
+    <div>
+      <ul>
+        <li><a [routerLink]="['/about']">Sobre Mi</a></li>
+        <li><a class="contacto-cursor" (click)="redirectForm()">Contacto</a></li>
+      </ul>
+    </div>
+    </div>    
+</nav>

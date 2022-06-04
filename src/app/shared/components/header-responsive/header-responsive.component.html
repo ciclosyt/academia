@@ -1,0 +1,21 @@
+<nav class="nav-mobile">
+    <div class="container-mobile">
+        <div>
+            <img src="../../../../assets/logo/logo-joseParrilla.png" alt="logo Jose Parrilla">
+        </div>
+        <div>
+            <mat-icon (click)="toggleMenu()">{{ mostrarMenu ? 'close' : 'menu' }}</mat-icon>
+        </div>
+    </div>    
+</nav>
+<!-- contenido dinamico -->
+<div class="contenido-nav" *ngIf="mostrarMenu">
+    <ul>
+        <li><a routerLinkActive="active" (click)="toggleMenu()" [routerLinkActiveOptions]="{exact:
+          true}" aria-current="page" [routerLink]="['/inicio']">Inicio</a></li>
+        <li><a (click)="toggleMenu()" [routerLink]="['/servicios']">Servicios</a></li>
+        <li><a (click)="toggleMenu()" [routerLink]="['/about']">Sobre Mi</a></li>
+        <li><a (click)="redirectForm(); toggleMenu()">Contacto</a></li>
+        <li><mat-icon (click)="toggleMenu()">cancel</mat-icon></li>
+      </ul>
+</div>

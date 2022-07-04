@@ -1,0 +1,71 @@
+.contenido-tecnologia{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    height: 55vh;
+    gap: 2%;
+    background-color: #201f1f;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-tech{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-tech > h1{
+    font-size: 2.5rem;
+    color: #0802B3;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contenido-tech{
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    width: 80%;
+    gap: 2%;
+    justify-content: center;
+}
+
+.dinamico-tech{
+    display: flex;
+    flex-direction: column;
+    width: 39%;
+    justify-content: center;
+    align-content: center;
+}
+
+.tecnologias{
+    display: flex;
+    width: 39%;
+    justify-content: center;
+    align-content: center;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    width: 100%;
+}
+
+li {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+}
+
+.img-lottie-tech{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

@@ -10,7 +10,15 @@ import { FormularioComponent } from './components/formulario/formulario.componen
 import { LandingComponent } from './components/landing/landing.component';
 import { HeaderResponsiveComponent } from './components/header-responsive/header-responsive.component';
 import { MaterialModule } from '../material/material.module';
+import { LottieComponent } from './components/lottie/lottie.component';
+import { LottieModule } from 'ngx-lottie';
+import player from 'lottie-web';
+import { TechnologyComponent } from './components/technology/technology.component';
+import { LottieTechComponent } from './components/lottie-tech/lottie-tech.component';
 
+export function playerFactory() { // add this line
+  return player; // add this line
+} 
 
 
 @NgModule({
@@ -21,11 +29,15 @@ import { MaterialModule } from '../material/material.module';
     PresentComponent,
     FormularioComponent,
     LandingComponent,
-    HeaderResponsiveComponent
+    HeaderResponsiveComponent,
+    LottieComponent,
+    TechnologyComponent,
+    LottieTechComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
+    LottieModule.forRoot({ player: playerFactory}),
     MaterialModule
   ],
   exports: [
@@ -35,6 +47,7 @@ import { MaterialModule } from '../material/material.module';
     FormularioComponent,
     LandingComponent,
     HeaderResponsiveComponent,
+    LottieComponent,
     SpinnerComponent
   ]
 })

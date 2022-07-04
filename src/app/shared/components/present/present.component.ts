@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Alumnos } from '../../interface/alumnos.interface';
 
 @Component({
   selector: 'app-present',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./present.component.scss']
 })
 export class PresentComponent implements OnInit {
+
+  @Input() alumnos!: Alumnos[];
 
   constructor() { }
 

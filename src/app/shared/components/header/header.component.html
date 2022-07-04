@@ -4,16 +4,16 @@
       <ul>
         <li><a routerLinkActive="active" [routerLinkActiveOptions]="{exact:
           true}" aria-current="page" [routerLink]="['/inicio']">Inicio</a></li>
-        <li><a [routerLink]="['/servicios']">Servicios</a></li>
+        <li><a routerLinkActive="active" [routerLink]="['/servicios']">Servicios</a></li>
       </ul>
     </div>
     <div>
-      <img src="../../../../assets/perfil/avatar.png" alt="imagen Jose Parrilla">
+      <img src="../../../../assets/logo/logo.png" alt="logo Jose Parrilla">
     </div>
     <div>
       <ul>
-        <li><a [routerLink]="['/about']">Sobre Mi</a></li>
-        <li><a class="contacto-cursor" (click)="redirectForm()">Contacto</a></li>
+        <li><a routerLinkActive="active" [routerLink]="['/about']">Sobre Mi</a></li>
+        <li><a routerLinkActive="active" class="contacto-cursor" (click)="redirectForm()">Contacto</a></li>
       </ul>
     </div>
     </div>    

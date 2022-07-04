@@ -14,3 +14,24 @@ body{
     font-size: 16px;
     background-color: $fondo;
 }
+
+body::-webkit-scrollbar {
+    -webkit-appearance: none; }
+  
+  body::-webkit-scrollbar:vertical {
+    width: 14px; }
+  
+  body::-webkit-scrollbar-button:increment, body::-webkit-scrollbar-button {
+    display: none; }
+  
+  body::-webkit-scrollbar:horizontal {
+    height: 0.625rem; }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: $secundario;
+    border-radius: 16px;
+    border: 2px solid #1B1F28; }
+  
+  body::-webkit-scrollbar-track {
+    border-radius: 16px;
+  }

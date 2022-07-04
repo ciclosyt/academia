@@ -49,7 +49,7 @@
   .loader img {
     position: absolute;
     width: 265px;
-    height: 90px;
+    height: 120px;
     object-fit: cover;
     background-size: cover;
     top: -120px;
@@ -59,11 +59,11 @@
       .loader img {
         position: absolute;
         width: 265px;
-        height: 90px;
+        height: 12fr;
         object-fit: cover;
         background-size: cover;
         top: -120px;
-        left: -13px; 
+        left: -41px; 
       }
         .loader img .reset {
           display: none; 

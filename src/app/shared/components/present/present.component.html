@@ -1,19 +1,32 @@
 <mat-card class="example-card">
     <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>Shiba Inu</mat-card-title>
-      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+      <div mat-card-avatar [class]="alumnos.clase"></div>
+      <mat-card-title>{{ alumnos.nombre }}</mat-card-title>
+      <mat-card-subtitle>{{ alumnos.profesion }}</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    <img mat-card-image [src]="alumnos.foto" alt="imagen de {{ alumnos.nombre }}">
     <mat-card-content>
       <p>
-        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-        bred for hunting.
+        {{ alumnos.comentario }}
       </p>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-button>LIKE</button>
-      <button mat-button>SHARE</button>
+      <button mat-icon-button color="warn" aria-label="estrellas">
+        <mat-icon>star</mat-icon>
+      </button>
+      <button mat-icon-button color="warn" aria-label="estrellas">
+        <mat-icon>star</mat-icon>
+      </button>
+      <button mat-icon-button color="warn" aria-label="estrellas">
+        <mat-icon>star</mat-icon>
+      </button>
+      <button mat-icon-button color="warn" aria-label="estrellas">
+        <mat-icon>star</mat-icon>
+      </button>
+      <button mat-icon-button color="warn" aria-label="estrellas">
+        <mat-icon>star</mat-icon>
+      </button>
+      <span class="spacer"></span>
+      <button mat-stroked-button color="accent">Únete a Nosotros!!</button>
     </mat-card-actions>
   </mat-card>

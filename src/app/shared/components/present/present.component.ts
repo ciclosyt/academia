@@ -8,7 +8,7 @@ import { Alumnos } from '../../interface/alumnos.interface';
 })
 export class PresentComponent implements OnInit {
 
-  @Input() alumnos!: Alumnos[];
+  @Input() alumnos!: Alumnos;
 
   constructor() { }
 

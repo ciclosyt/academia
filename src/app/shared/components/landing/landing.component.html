@@ -18,7 +18,5 @@
 <app-technology></app-technology>
 <!-- contenido card opiniones alumnos -->
 <div class="contenedor-opiniones">
-    <app-present></app-present>
-    <app-present></app-present>
-    <app-present></app-present>
+    <app-present [alumnos]="alumno" *ngFor="let alumno of alumnosLanding"></app-present>
 </div>

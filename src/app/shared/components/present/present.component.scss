@@ -6,3 +6,29 @@
     background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
     background-size: cover;
   }
+
+  .avatar-juan {
+    background-image: url('../../../../assets/avatar/juan-avatar.jpg');
+    background-size: cover;
+  }
+  .avatar-clara {
+    background-image: url('../../../../assets/avatar/clara-avatar.jpg');
+    background-size: cover;
+  }
+  .avatar-carlos {
+    background-image: url('../../../../assets/avatar/carlos-avatar.jpg');
+    background-size: cover;
+  }
+  .spacer {
+    flex: 1 1 auto;
+  }
+
+  .mat-card-actions {
+    display: flex;
+  }
+
+  .mat-icon-button {
+    margin-right: -10px;
+    margin-left: -10px;
+    color: #f3ca4c;
+  }

@@ -3,3 +3,60 @@ $fondo: #161616;
 $principal: #ffffff;
 $secundario: #0802b3;
 $texto: #9b9aa4;
+
+
+footer{
+    border-top: 1px solid $secundario;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    width: 100%;
+    padding: 2%;
+}
+
+.derechos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    width: 80%;
+}
+
+.redes ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    list-style: none;
+    margin-top: 2%;
+    font-size: 36px;
+}
+ul > li{
+    width: 60px;
+    height: 60px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #ffffff0a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.7s ease-in-out;
+}
+
+li:hover{
+    transform: translate(0, -5px);
+}

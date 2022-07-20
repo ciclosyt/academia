@@ -35,8 +35,8 @@ export class AppComponent implements OnInit {
       
     }, 4500);
 
-    Aos.init()
-    
+    Aos.init();
+  
   }
   title = 'Jose Parrilla Academy';
 }

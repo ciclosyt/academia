@@ -1,12 +1,12 @@
 <div class="contenedor-landing">
     <div class="texto-landing">
         <img src="../../../../assets/perfil/avatar2.0.png" width="25%" alt="avatar Jose Parrilla">
-        <h1>APRENDE a PROGRAMAR Desde CERO</h1>
-        <p>Hola, me llamo Jose y trabajo como Software Developer para una de las Cinco Multinacionales mas importantes del Sector IT. <br>
+        <h1 class="h1-landing">Aprende a PROGRAMAR Desde CERO</h1>
+        <p class="p-landing">Hola, me llamo Jose y trabajo como Software Developer para una de las Cinco Multinacionales mas importantes del Sector IT. <br>
         Te enseñaré a PROGRAMAR como se hace en proyectos reales y mejoraré tu lógica de programación para que estes preparado
         en tu dia a dia como Developer.</p>
-        <div>
-            <button mat-raised-button color="primary">Servicios</button>
+        <div class="button-landing">
+            <button mat-stroked-button class="btn-border" color="accent">Servicios</button>
             <button mat-raised-button color="primary">Comienza Ahora!</button>
         </div>
     </div>
@@ -17,6 +17,19 @@
 </div>
 <app-technology></app-technology>
 <!-- contenido card opiniones alumnos -->
-<div class="contenedor-opiniones">
+<div class="contenedor-alumnos">
+    <app-titulo [tamanio]=sizeFont titulo="Mis Alumnos me Avalan"></app-titulo>
+    <div class="contenedor-opiniones">
     <app-present [alumnos]="alumno" *ngFor="let alumno of alumnosLanding"></app-present>
 </div>
+</div>
+
+<div class="contenedor-form">
+    <app-titulo [tamanio]=sizeFont titulo="Tomemos café y charlemos"></app-titulo>   
+    <app-contact></app-contact>
+    <app-formulario></app-formulario>    
+</div>
+
+<!-- footer -->
+
+<app-footer></app-footer>

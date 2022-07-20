@@ -10,6 +10,7 @@ import { Alumnos } from '../../interface/alumnos.interface';
 export class LandingComponent implements OnInit {
 
   alumnosLanding!: Alumnos[];
+  sizeFont:number = 45
 
   constructor( private alumnos: AlumnosService ) { }
 

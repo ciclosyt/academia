@@ -15,6 +15,11 @@ import { LottieModule } from 'ngx-lottie';
 import player from 'lottie-web';
 import { TechnologyComponent } from './components/technology/technology.component';
 import { LottieTechComponent } from './components/lottie-tech/lottie-tech.component';
+import { TituloComponent } from './components/titulo/titulo.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import {MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { ContactComponent } from './components/contact/contact.component';
 
 export function playerFactory() { // add this line
   return player; // add this line
@@ -32,10 +37,15 @@ export function playerFactory() { // add this line
     HeaderResponsiveComponent,
     LottieComponent,
     TechnologyComponent,
-    LottieTechComponent
+    LottieTechComponent,
+    TituloComponent,
+    ContactComponent
   ],
   imports: [
     CommonModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatFormFieldModule,
     RouterModule,
     LottieModule.forRoot({ player: playerFactory}),
     MaterialModule
@@ -48,6 +58,7 @@ export function playerFactory() { // add this line
     LandingComponent,
     HeaderResponsiveComponent,
     LottieComponent,
+    TituloComponent,
     SpinnerComponent
   ]
 })

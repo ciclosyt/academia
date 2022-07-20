@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TechnologyComponent implements OnInit {
 
+  public fuente: number = 45;
+
   constructor(  ) { }
 
   ngOnInit(): void {

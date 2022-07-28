@@ -1,31 +1,30 @@
 <div class="contenedor-landing">
     <div class="texto-landing">
         <img src="../../../../assets/perfil/avatar2.0.png" width="25%" alt="avatar Jose Parrilla">
-        <h1 class="h1-landing">Aprende a PROGRAMAR Desde CERO</h1>
+        <app-titulo class="h1-landing" titulo="Aprende a PROGRAMAR Desde CERO"></app-titulo>
         <p class="p-landing">Hola, me llamo Jose y trabajo como Software Developer para una de las Cinco Multinacionales mas importantes del Sector IT. <br>
         Te enseñaré a PROGRAMAR como se hace en proyectos reales y mejoraré tu lógica de programación para que estes preparado
         en tu dia a dia como Developer.</p>
         <div class="button-landing">
-            <button mat-stroked-button class="btn-border" color="accent">Servicios</button>
+            <button mat-stroked-button class="btn-border" color="accent">¡Conoce nuestra Academia!</button>
             <button mat-raised-button color="primary">Comienza Ahora!</button>
         </div>
     </div>
     <div class="imagen-landing">
-        <!-- <img src="../../../../assets/imagenes/joseParrilla-sinFondo.png" alt="Avatar Jose Parrilla"> -->
         <app-lottie class="img-lotie"></app-lottie>
     </div>
 </div>
 <app-technology></app-technology>
 <!-- contenido card opiniones alumnos -->
 <div class="contenedor-alumnos">
-    <app-titulo [tamanio]=sizeFont titulo="Mis Alumnos me Avalan"></app-titulo>
-    <div class="contenedor-opiniones">
-    <app-present [alumnos]="alumno" *ngFor="let alumno of alumnosLanding"></app-present>
-</div>
+    <app-titulo titulo="Mis Alumnos me Avalan"></app-titulo>
+    <div class="contenedor-opiniones" data-aos="fade-up" data-aos-duration="6000">
+        <app-present [alumnos]="alumno" *ngFor="let alumno of alumnosLanding"></app-present>
+    </div>
 </div>
 
 <div class="contenedor-form">
-    <app-titulo [tamanio]=sizeFont titulo="Tomemos café y charlemos"></app-titulo>   
+    <app-titulo titulo="Tomemos café y charlemos"></app-titulo>   
     <app-contact></app-contact>
     <app-formulario></app-formulario>    
 </div>

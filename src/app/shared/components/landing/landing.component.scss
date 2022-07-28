@@ -22,14 +22,16 @@ $texto : #9B9AA4;
   justify-content: space-evenly;
   width: 40%;
   height: 80%;
+  margin-bottom: 2%;
 }
 
 
 .texto-landing > p{
     text-align: justify;
     word-spacing: 6px;
-    line-height: 25px;
+    line-height: 30px;
     color: $texto;
+    margin: 2% 0;
 }
 
 .imagen-landing {
@@ -37,7 +39,7 @@ $texto : #9B9AA4;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 30%;
+  width:40%;
   height: 100%;
 }
 
@@ -106,11 +108,11 @@ $texto : #9B9AA4;
 }
 
 .p-landing{
-  width:60%
+  width:90%
 }
 
 .button-landing {
-  width: 60%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   gap: 2%;
@@ -119,8 +121,45 @@ $texto : #9B9AA4;
 .button-landing > button {
   margin-top: 1%;
   font-size: 20px;
+  height: 50px;
 }
 
 .mat-stroked-button:not(.mat-button-disabled){
   border: 1px solid $secundario;
 }
+
+
+//media queries
+
+//resolucion 1400
+
+  @media screen and (max-width: 1400px) {
+    .contenedor-landing {
+      flex-direction: column;
+    }
+    .texto-landing {
+      width: 50%;
+      margin: 2% 0;
+      justify-content: center;
+
+      .button-landing{
+        width: 100%;
+      }
+
+      .p-landing{
+        width: 100%;
+        margin: 2% 0;
+      }
+    }
+    .imagen-landing {
+      display: none;
+    }
+    .contenedor-alumnos{
+    }
+    .contenedor-opiniones {
+    }
+    .contenedor-form{
+    }
+    .contenido-contacto{
+    }
+  }

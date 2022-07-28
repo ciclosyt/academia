@@ -27,8 +27,22 @@
     display: flex;
   }
 
+  .mat-stroked-button{
+    border-color: aliceblue;
+  }
+
   .mat-icon-button {
     margin-right: -10px;
     margin-left: -10px;
     color: #f3ca4c;
+  }
+
+  //media queries
+
+  // 1400 px
+
+  @media (max-width: 1400px) {
+    .example-card {
+      max-width: 280px;
+    }
   }

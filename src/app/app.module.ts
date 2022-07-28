@@ -14,6 +14,7 @@ import { MaterialModule } from './material/material.module';
 import { LottieModule } from 'ngx-lottie';
 import player from 'lottie-web';
 
+
 export function playerFactory() { // add this line
   return player; // add this line
 } 

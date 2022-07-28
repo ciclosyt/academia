@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed:wght@300&family=Vollkorn:ital@1&display=swap');
 
 $fondo: #161616;
 $principal: #ffffff;
@@ -14,13 +15,17 @@ $texto: #9b9aa4;
 }
 
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   scroll-behavior: smooth;
 }
 
 body {
   background-color: $fondo;
   color: $principal;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
 }
 
 .overlay {

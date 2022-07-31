@@ -110,3 +110,27 @@ li {
             font-size: 50px;
         }
     }
+
+    //1280px
+    @media screen and (max-width: 700px) {
+
+        .contenido-tech{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+        }
+
+        .dinamico-tech{
+            width: 80%;
+        }
+
+        .tecnologias{
+            width: 80%;
+            height: 200px;
+        }
+
+        li{
+            font-size: 30px;
+        }
+    }

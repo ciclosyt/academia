@@ -4,3 +4,16 @@
     align-items: center;
     justify-content: center;
 }
+
+.contenido-contacto p {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 700px) {
+
+    .contenido-contacto p {
+        text-align: center;
+        font-size: 12px;
+    }
+}

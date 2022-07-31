@@ -85,7 +85,7 @@ export class AppComponent implements OnInit {
         
         if (min && max === true){
           console.log('esta dentro del rango tablet');
-          this.breakService.sendSize(36)          
+          this.breakService.sendSize(28)          
         }        
       }     
     })
@@ -101,8 +101,8 @@ export class AppComponent implements OnInit {
         let max = state.breakpoints['(max-width: 600px)'];
         
         if (min && max === true){
-          console.log('esta dentro del rango mobil');
-          this.breakService.sendSize(28)
+          console.log('esta dentro del rango movil');
+          this.breakService.sendSize(18)
         }        
       }     
     })

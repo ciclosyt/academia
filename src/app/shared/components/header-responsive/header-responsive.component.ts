@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -10,7 +10,8 @@ export class HeaderResponsiveComponent implements OnInit {
 
   mostrarMenu: boolean = false;
 
-  constructor( private router:Router) { }
+  constructor( private router:Router,
+                private el: ElementRef) { }
 
   ngOnInit(): void {
   }

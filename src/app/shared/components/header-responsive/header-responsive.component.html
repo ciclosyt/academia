@@ -4,12 +4,12 @@
             <img src="../../../../assets/logo/logo-nombre.png" alt="logo Jose Parrilla">
         </div>
         <div>
-            <mat-icon (click)="toggleMenu()">{{ mostrarMenu ? 'close' : 'menu' }}</mat-icon>
+            <mat-icon (click)="toggleMenu()">{{ mostrarMenu ? '' : 'menu' }}</mat-icon>
         </div>
     </div>    
 </nav>
 <!-- contenido dinamico -->
-<div class="contenido-nav" *ngIf="mostrarMenu">
+<div [ngClass]="['contenido-nav' , mostrarMenu ? 'is_active' : '']">
     <ul>
         <li><a routerLinkActive="active" (click)="toggleMenu()" [routerLinkActiveOptions]="{exact:
           true}" aria-current="page" [routerLink]="['/inicio']">Inicio</a></li>

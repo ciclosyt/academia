@@ -24,6 +24,10 @@ footer{
     width: 80%;
 }
 
+.derechos p {
+    text-align: center;
+}
+
 .redes{
     display: flex;
     flex-direction: column;
@@ -43,6 +47,7 @@ footer{
     margin-top: 2%;
     font-size: 36px;
 }
+
 ul > li{
     width: 60px;
     height: 60px;
@@ -64,3 +69,43 @@ li img {
 li:hover{
     transform: translate(0, -5px);
 }
+
+
+// mediqueries
+
+@media screen and (max-width: 1400px){
+
+    ul > li{
+        width: 30px;
+        height: 30px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.7s ease-in-out;
+    }
+
+}
+
+// max resolution 1000px
+
+@media screen and (max-width: 1000px){
+
+    ul > li{
+        width: 20px;
+        height: 20px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.7s ease-in-out;
+    }
+
+}
+    

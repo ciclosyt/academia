@@ -8,12 +8,11 @@ html{
 }
 
 body{
-    margin:0;
-    padding:0;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     background-color: $fondo;
 }
+
 
 body::-webkit-scrollbar {
     -webkit-appearance: none; }

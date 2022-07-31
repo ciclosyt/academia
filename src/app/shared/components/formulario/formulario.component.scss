@@ -5,7 +5,20 @@
     padding: 2%;
 }
 
+form .mat-raised-button:disabled{
+    background-color: #7470e2;
+    color: #bdbaba;
+}
+
 
 .btn__send{
     height: 50px;
+}
+
+// responsive 700px
+
+@media screen and (max-width: 700px) {
+    form{
+        width: 315px;
+    }
 }

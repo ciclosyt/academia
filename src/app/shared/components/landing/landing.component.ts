@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AlumnosService } from '../../services/alumnos.service';
-import { Alumnos } from '../../interface/alumnos.interface';
-import { BreakpointsService } from '../../services/breakpoints.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-landing',
@@ -10,18 +8,23 @@ import { BreakpointsService } from '../../services/breakpoints.service';
 })
 export class LandingComponent implements OnInit {
 
-  alumnosLanding!: Alumnos[];
 
-  constructor( private alumnos: AlumnosService,
-               private breakService: BreakpointsService) {       }
+
+  constructor( private router: Router) {       }
 
   ngOnInit(): void {
-    this.getAlumnos();
 
   }
 
-  getAlumnos() {
-    this.alumnosLanding = this.alumnos.getAlumnos;
+  redirectForm(): void {
+    this.router.onSameUrlNavigation = "reload";
+    this.router.navigate(["/inicio"], { fragment: "formulario" }).finally(() => {
+        this.router.onSameUrlNavigation = "ignore"; // Restore config after navigation completes
+    });
+  }
+
+  redirectAcademy(): void {
+    this.router.navigate(["/servicios"]);
   }
 
 }

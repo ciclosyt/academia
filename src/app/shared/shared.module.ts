@@ -53,13 +53,16 @@ export function playerFactory() { // add this line
   exports: [
     HeaderComponent,
     FooterComponent,
+    SpinnerComponent,
     PresentComponent,
     FormularioComponent,
     LandingComponent,
     HeaderResponsiveComponent,
     LottieComponent,
+    TechnologyComponent,
+    LottieTechComponent,
     TituloComponent,
-    SpinnerComponent
+    ContactComponent
   ]
 })
 export class SharedModule { }

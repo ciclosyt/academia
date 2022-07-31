@@ -1,4 +1,21 @@
 <!-- contenido landing-page -->
-<div class="responsive-landing">
-    <app-landing></app-landing>
-</div>
+    <app-landing data-aos="fade-down" data-aos-duration="2000"></app-landing>
+
+    <app-technology></app-technology>
+    <!-- contenido card opiniones alumnos -->
+    <div class="contenedor-alumnos">
+        <app-titulo titulo="Mis Alumnos me Avalan"></app-titulo>
+        <div class="contenedor-opiniones" data-aos="fade-up" data-aos-duration="3000">
+            <app-present [alumnos]="alumno" *ngFor="let alumno of alumnosLanding"></app-present>
+        </div>
+    </div>
+
+    <div class="contenedor-form">
+        <app-titulo titulo="Tomemos café y charlemos"></app-titulo>   
+        <app-contact></app-contact>
+        <app-formulario></app-formulario>    
+    </div>
+
+    <!-- footer -->
+    <app-footer></app-footer>
+    

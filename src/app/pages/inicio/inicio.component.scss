@@ -8,3 +8,63 @@ $texto : #9B9AA4;
   width: 100%;
   overflow: visible !important;
 }
+
+
+
+$fondo : #161616;
+$principal : #FFFFFF;
+$secundario : #0802B3;
+$texto : #9B9AA4;
+
+
+.contenedor-alumnos{
+  width: 100%;
+  display: flex;
+  padding-top: 1%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor-opiniones {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    width: 100%;
+    height: auto;
+    padding: 3%;
+}
+
+.contenedor-form{
+  background-color: #201f1f;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+  padding: 2%;
+
+}
+
+
+
+//media queries
+
+//resolucion 1400
+
+  @media screen and (max-width: 1400px) {
+
+    .contenedor-alumnos{
+    }
+    .contenedor-opiniones {
+    }
+    .contenedor-form{
+    }
+    .contenido-contacto{
+    }
+  }

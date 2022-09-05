@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Alumnos } from '../../interface/alumnos.interface';
 
 @Component({
@@ -10,9 +11,15 @@ export class PresentComponent implements OnInit {
 
   @Input() alumnos!: Alumnos;
 
-  constructor() { }
+  constructor( private router: Router) { }
 
   ngOnInit(): void {
   }
 
+  redirectForm(): void {
+    this.router.onSameUrlNavigation = "reload";
+    this.router.navigate(["/inicio"], { fragment: "formulario" }).finally(() => {
+        this.router.onSameUrlNavigation = "ignore"; // Restore config after navigation completes
+    });
+  }
 }

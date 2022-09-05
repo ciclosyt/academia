@@ -17,7 +17,7 @@
                     placeholder="madona@example.com" 
                     required
                     formControlName="email">
-            <mat-error></mat-error>
+            <mat-error *ngIf="emailControl">{{getErrorMessage()}}</mat-error>
         </mat-form-field>
 
         <mat-form-field appearance="fill" color="basic">

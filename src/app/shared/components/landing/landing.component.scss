@@ -120,6 +120,17 @@ $texto : #9B9AA4;
     .button-landing{
       width: 60%;
     }
+    .texto-landing > p{
+      font-size: 16px;
+    }
+
+    img{
+      width: 45% !important;
+    }
+    .contenedor-landing{
+      margin-bottom: 3%;
+    }
+
   }
 
 
@@ -134,12 +145,16 @@ $texto : #9B9AA4;
     }
 
     .texto-landing > p{
-      font-size: 12px;
+      font-size: 14px;
       line-height: 20px;
     }
 
     .button-landing > button{
       font-size: 12px;
       
+    }
+
+    .button-landing button{
+      font-size: 18px;
     }
   }

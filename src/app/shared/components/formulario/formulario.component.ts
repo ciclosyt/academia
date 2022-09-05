@@ -18,7 +18,9 @@ export class FormularioComponent implements OnInit {
   userForm: FormGroup;
   mostrar: boolean = true;
 
-  email: Email;
+  emailValue: Email;
+
+  
 
 
   constructor( private fb: FormBuilder,
@@ -31,12 +33,27 @@ export class FormularioComponent implements OnInit {
             mensaje: [ '' ,[Validators.required, Validators.minLength(3)]]
         })
               
-          this.email = this.userForm.value
-    
+          this.emailValue = this.userForm.value
   }
+
 
   ngOnInit(): void {
   }
+
+  get emailControl(){
+    return this.userForm.get('email')?.invalid
+  }
+
+
+
+  getErrorMessage() {
+    if (this.userForm.get('email')?.hasError('required')) {
+      return 'Debes entrar un email válido';
+    }
+
+    return this.userForm.get('email')?.hasError('email') ? 'Email no válido' : '';
+  }
+
 
     bloqueado():any{
     if(this.userForm?.invalid){
@@ -55,35 +72,30 @@ export class FormularioComponent implements OnInit {
       'Charlaremos muy pronto ;)',
       'success'
     )
-
-
   }
-
-
 
   submitForm(){
 
-    this.email = this.userForm.value
+    this.emailValue = this.userForm.value
 
-    this.emailSvc.sendMail(this.email).subscribe(
+    this.emailSvc.sendMail(this.emailValue).subscribe(
       () => {
-
-        this.showModal()
+        this.showModal();
 
         setTimeout(() => {
-          const formValueReset = {}
-          window.scrollTo(0,0)
-          this.userForm.reset({})
-          this.userForm.clearValidators()
+          window.scrollTo(0,0);
+          this.userForm.reset();
         }, 1500);        
 
       }, (error) => {
 
         console.error(error)
 
-      }
-    )
-  
+      },
+      () => {
+        console.log('completado');
+      }        
+    )  
   }
 
   redirectForm(): void {

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { IlustracionesInterface } from '../../interface/ilustraciones.interface';
+import { IlustracionesService } from '../../services/ilustraciones.service';
 
 @Component({
   selector: 'app-academia-diferencia',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AcademiaDiferenciaComponent implements OnInit {
 
-  constructor() { }
+  ilustraciones!: IlustracionesInterface[];
+
+  constructor( private ilustacion:IlustracionesService ) { }
 
   ngOnInit(): void {
+    this.ilustraciones = this.ilustacion.Ilustraciones;
   }
 
 }

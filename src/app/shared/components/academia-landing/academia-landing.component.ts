@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SharingService } from '../../services/sharing.service';
 
 @Component({
   selector: 'app-academia-landing',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AcademiaLandingComponent implements OnInit {
 
-  constructor() { }
+  constructor( private sharing: SharingService) { }
 
   ngOnInit(): void {
+  }
+
+  dowloadFile(){
+    this.sharing.dowloadFile;
   }
 
 }

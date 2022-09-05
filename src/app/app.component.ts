@@ -102,7 +102,7 @@ export class AppComponent implements OnInit {
         
         if (min && max === true){
           console.log('esta dentro del rango movil');
-          this.breakService.sendSize(18)
+          this.breakService.sendSize(22)
         }        
       }     
     })

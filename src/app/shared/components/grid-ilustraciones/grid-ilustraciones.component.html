@@ -1,18 +1,11 @@
-<div class="container__grid">
-    <div class="item__1">
-        <h2>Atención Personalizada</h2>
-        <img src="../../../../assets/ilustraciones/educator.png" alt="educación">
-    </div>
-    <div class="item__2">
-        <h2>Experiencia Contrastada</h2>
-        <img src="../../../../assets/ilustraciones/project.png" alt="proyectos">
-    </div>
-    <div class="item__3">
-        <h2>Vanguardia Tecnológica</h2>
-        <img src="../../../../assets/ilustraciones/react.png" alt="react">
-    </div>
-    <div class="item__4">
-        <h2>Aprendizaje Basado en Proyectos</h2>
-        <img src="../../../../assets/ilustraciones/test.png" alt="test">
-    </div>
-</div>
+
+<figure class="snip1527">
+    <div class="image"><img [src]="ilustracion.imagen_url" [alt]="ilustracion.imagen" /></div>
+    <figcaption>
+      <div class="date"><span class="day">{{ index + 1 }}</span><span class="month">{{ ilustracion.autor }}</span></div>
+      <h3>{{ ilustracion.titulo }}</h3>
+      <p>  
+            {{ ilustracion.descripcion }}
+      </p>
+    </figcaption>
+  </figure>

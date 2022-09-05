@@ -14,7 +14,11 @@ $texto : #9B9AA4;
 
 .active{
   color: $texto;
+  text-decoration-line: underline;
+  text-decoration-color: #0802B3;
+  padding-bottom: 3px;
 }
+
 
 .container-desktop {
   width: 90%;

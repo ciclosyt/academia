@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { IlustracionesInterface } from '../../interface/ilustraciones.interface';
 
 @Component({
   selector: 'app-grid-ilustraciones',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./grid-ilustraciones.component.scss']
 })
 export class GridIlustracionesComponent implements OnInit {
+
+  @Input() ilustracion!: IlustracionesInterface;
+  @Input() index!: number;
 
   constructor() { }
 

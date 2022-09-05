@@ -14,7 +14,7 @@ export class AcademiaLandingComponent implements OnInit {
   }
 
   dowloadFile(){
-    this.sharing.dowloadFile;
+    this.sharing.dowloadFile();
   }
 
 }

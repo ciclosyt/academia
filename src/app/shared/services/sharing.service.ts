@@ -11,13 +11,9 @@ export class SharingService {
   constructor() { }
 
   dowloadFile(){
-    console.log('descargando');
-    
     const pdfDownload = document.createElement('a');
     pdfDownload.href = `${this.baseUrl}/assets/pdf/servicios.pdf`;
     pdfDownload.download = 'academy-services.pdf';
-    console.log(pdfDownload);
-    
     pdfDownload.click();
 
   }

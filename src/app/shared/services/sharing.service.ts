@@ -13,6 +13,7 @@ export class SharingService {
   dowloadFile(){
     const pdfDownload = document.createElement('a');
     pdfDownload.href = `${this.baseUrl}/assets/pdf/servicios.pdf`;
+    pdfDownload.target = '_blank';
     pdfDownload.download = 'academy-services.pdf';
     pdfDownload.click();
 

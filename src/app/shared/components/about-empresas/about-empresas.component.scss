@@ -1,28 +1,28 @@
-.row-about-landing {
+.row-about-empresas{
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: center;
-    align-items: center; 
-    margin-bottom: 5%;   
-}
-
-.container__about {
-    width: 80%;
-    height: auto;
-    margin: 4% 0;
-    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
+    background-color: #201f1f;
+    padding-bottom: 4%; 
 }
 
-.container__about iframe{
-    margin-top: 3%;
+.container__empresas{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 4% 0;
 }
 
 .btn {
-    margin: 4% 0;
+    margin: 2% 0;
     box-sizing: border-box;
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -64,11 +64,3 @@
   .third:hover {
     box-shadow: 0 0 10px 0 #0802B3 inset, 0 0 10px 4px #0802B3;
   }
-
- @media screen and  (max-width: 598px) {
-
-  .container__about iframe{
-    max-width: 330px;
-    min-width: 250px;
-}
-}

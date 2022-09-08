@@ -1,0 +1,15 @@
+<div class="row-about-empresas">     
+    <app-titulo titulo="Empresas y proyectos"></app-titulo>
+    <div class="container__empresas">
+        <app-grid-ilustraciones 
+            *ngFor="let empresa of empresas; index as i"
+            [ilustracion]="empresa"
+            [index]="i">
+        </app-grid-ilustraciones>
+    </div>
+
+    <button class="btn third" (click)="redirectLinkedin()">
+        Ver mi LinkedIN
+    </button>
+
+</div>

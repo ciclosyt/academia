@@ -24,5 +24,11 @@ export class SharingService {
     whatsapp.target = '_blank';
     whatsapp.click();
   }
+  redirectLinkedin(){
+    const linkedin = document.createElement('a');
+    linkedin.href = `https://www.linkedin.com/in/jose-manuel-calvete-parrilla-desarrollo-web/`;
+    linkedin.target = '_blank';
+    linkedin.click();
+  }
 
 }

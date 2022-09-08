@@ -29,6 +29,7 @@ import { AcademiaServiciosComponent } from './components/academia-servicios/acad
 import { AcademiaDiferenciaComponent } from './components/academia-diferencia/academia-diferencia.component';
 import { GridIlustracionesComponent } from './components/grid-ilustraciones/grid-ilustraciones.component';
 import { AboutLandingComponent } from './components/about-landing/about-landing.component';
+import { AboutEmpresasComponent } from './components/about-empresas/about-empresas.component';
 
 export function playerFactory() { // add this line
   return player; // add this line
@@ -55,7 +56,8 @@ export function playerFactory() { // add this line
     AcademiaServiciosComponent,
     AcademiaDiferenciaComponent,
     GridIlustracionesComponent,
-    AboutLandingComponent
+    AboutLandingComponent,
+    AboutEmpresasComponent
   ],
   imports: [
     CommonModule,
@@ -86,7 +88,8 @@ export function playerFactory() { // add this line
     AcademiaServiciosComponent,
     AcademiaDiferenciaComponent,
     GridIlustracionesComponent,
-    AboutLandingComponent
+    AboutLandingComponent,
+    AboutEmpresasComponent
   ]
 })
 export class SharedModule { }

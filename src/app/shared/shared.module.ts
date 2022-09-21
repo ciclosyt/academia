@@ -30,6 +30,7 @@ import { AcademiaDiferenciaComponent } from './components/academia-diferencia/ac
 import { GridIlustracionesComponent } from './components/grid-ilustraciones/grid-ilustraciones.component';
 import { AboutLandingComponent } from './components/about-landing/about-landing.component';
 import { AboutEmpresasComponent } from './components/about-empresas/about-empresas.component';
+import { ContactCardComponent } from './components/contact-card/contact-card.component';
 
 export function playerFactory() { // add this line
   return player; // add this line
@@ -57,7 +58,8 @@ export function playerFactory() { // add this line
     AcademiaDiferenciaComponent,
     GridIlustracionesComponent,
     AboutLandingComponent,
-    AboutEmpresasComponent
+    AboutEmpresasComponent,
+    ContactCardComponent
   ],
   imports: [
     CommonModule,
@@ -89,7 +91,9 @@ export function playerFactory() { // add this line
     AcademiaDiferenciaComponent,
     GridIlustracionesComponent,
     AboutLandingComponent,
-    AboutEmpresasComponent
+    AboutEmpresasComponent,
+    ContactCardComponent
+
   ]
 })
 export class SharedModule { }

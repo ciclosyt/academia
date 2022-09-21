@@ -32,4 +32,11 @@ export class SharingService {
     linkedin.click();
   }
 
+  email(){
+    const email = document.createElement('a');
+    email.href = `mailto:josecparrilla@gmail.com`;
+    email.target = '_blank';
+    email.click();
+  }
+
 }

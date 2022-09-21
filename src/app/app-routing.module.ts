@@ -7,7 +7,7 @@ const routes: Routes = [
   { path: 'inicio', loadChildren: () => import('./pages/inicio/inicio.module').then(m => m.InicioModule) },
   { path: 'about', loadChildren: () => import('./pages/about/about.module').then(m => m.AboutModule) },
   { path: 'servicios', loadChildren: () => import('./pages/servicios/servicios.module').then(m => m.ServiciosModule) }, 
-  { path:'**', redirectTo:''}
+  { path:'**', redirectTo:'inicio'}
 
 ];
 
